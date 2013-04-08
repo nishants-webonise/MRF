@@ -12,4 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require bootstrap-alert
+//= require jquery.colorbox-min
+//= require jquery.min
+//= require jquery.validate.min
 //= require_tree .

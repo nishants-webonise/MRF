@@ -29,16 +29,17 @@ class HomeController < ApplicationController
     ws[ws.num_rows,7] = params[:email]
     ws[ws.num_rows,8] = params[:phone]
 
+    # Save the data to Google Spreadsheet=
+    ws.save()
+
     # Reloads the worksheet to get changes by other clients.
     ws.reload()
+    flash[:success] = "You are successfully registered to our site !!! "
+    redirect_to root_path
 
-    # Save the data to Google Spreadsheet
-    if ws.save()
-      flash[:success] = "You are successfully registered to our site !!! "
-    else
-      flash[:error] = "You are not registered to our site. Please fill the registration details !!!"
-    end
+  rescue
+    flash[:error] = "You are not registered to our site. Please fill the registration details !!!"
+    redirect_to root_path
 
-    render 'index'
   end
 end

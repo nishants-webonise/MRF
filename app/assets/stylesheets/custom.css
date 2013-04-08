@@ -20,9 +20,9 @@ body {
 }
 
 .content {
-  width: 400px;
+  width: 420px;
   position: absolute;
-  left: 98px;
+  left: 80px;
   bottom: 54px;
 }
 
@@ -71,6 +71,9 @@ h3 span {
 
 .alert {
   width: 80%;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 45px;
 }
 
 /*error messages*/
