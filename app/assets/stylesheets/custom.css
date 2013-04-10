@@ -5,8 +5,8 @@ body {
 
 @font-face {
   font-family: 'estrangelo_edessaregular';
-  src: url('../fonts/estre.eot');
-  src: url('../fonts/estre.eot?#iefix') format('embedded-opentype'), url('../fonts/estre.woff') format('woff'), url('../fonts/estre.ttf') format('truetype'), url('../fonts/estre.svg#estrangelo_edessaregular') format('svg');
+  src: url('estre.eot');
+  src: url('estre.eot?#iefix') format('embedded-opentype'), url('estre.woff') format('woff'), url('estre.ttf') format('truetype'), url('estre.svg#estrangelo_edessaregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }

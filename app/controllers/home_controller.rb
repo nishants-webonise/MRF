@@ -17,9 +17,9 @@ class HomeController < ApplicationController
     ws[2,2] = 'Last Name'
     ws[2,3] = 'Age'
     ws[2,4] = 'T-Shirt Size'
-    ws[2,6] = 'Contact number'
-    ws[2,7] = 'Message'
-    ws[2,8] = 'Message'
+    ws[2,6] = 'Parent Name'
+    ws[2,7] = 'E-mail'
+    ws[2,8] = 'Contact No.'
 
     ws[ws.num_rows+1,1] = params[:fname]
     ws[ws.num_rows,2] = params[:lname]
